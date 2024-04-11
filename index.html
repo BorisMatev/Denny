@@ -18,6 +18,7 @@
             align-items: center;
             flex-direction: column;
             background-color:#101010;
+            text-align: center;
         }
         h1{
             position: absolute;
@@ -27,7 +28,8 @@
     </style>
 </head>
 <body>
-    <h1>Честит Рожден Ден Ден!</h1>
+    <h1>Честит Рожден Ден!</h1>
+    <h1 style="margin-top: 50px;">Ден♥</h1>
     <select onchange="load(this.value)" id="res" style="width: 100px;">
         <option>144p</option>
         <option>240p</option>
@@ -37,32 +39,26 @@
         <option>HD</option>
     </select>
 
-    <img src="1.png" style="width: 300px; margin-top: 50px; aspect-ratio: 1/1;" id="img" alt="">
+    <img src="1.png" style="width: 320px; margin-top: 50px; aspect-ratio: 1/1;" id="img" alt="">
     <script>
         const img = document.getElementById("img");
         function load(x) {
             if (x == "144p") {
-                img.style.width = "300px";
                 img.src = "1.png";
             }
             if (x == "240p") {
-                img.style.width = "300px";
                 img.src = "2.png";
             }
             if (x == "360p") {
-                img.style.width = "300px";
                 img.src = "3.png";
             }
             if (x == "480p") {
-                img.style.width = "300px";
                 img.src = "4.png";
             }
             if (x == "720p") {
-                img.style.width = "300px";
                 img.src = "5.png";
             }
             if (x == "HD") {
-                img.style.width = "400px";
                 img.src = "6.jpg";
             }
         }
